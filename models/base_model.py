@@ -5,13 +5,15 @@ import uuid
 from uuid import uuid4
 from datetime import datetime
 
-# Classes are real-world objects
-# I like cars, so think of a car
-# In the class, there are different pieces of data that 
-# make up the wheels, suspension, engine, etc.
+import models
+
+from models import storage
 
 class BaseModel(object):
-    """ Initializing the base class """
+    """ Initializing the base class
+    Classes are real-world objects
+    Like a car... the pieces that make a car
+    are in a class """
 
     date_format = "%Y-%m-%dT%H:%M:%S.%f"
 
@@ -25,6 +27,7 @@ class BaseModel(object):
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
+
     def str(self):
         """ String representation of base model """
         name = self.__class__.__name__
@@ -33,6 +36,8 @@ class BaseModel(object):
     def save(self):
         """ Saves basemodel with the date """
         self.updated_at = datetime.now()
+        models.storage.save()
+        
     
     def to_dict(self):
         """ Returns dictionary of base model
