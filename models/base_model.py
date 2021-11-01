@@ -45,4 +45,5 @@ class BaseModel(object):
             else:
                 to_dictionary_and_beyond[key] = value
                 to_dictionary_and_beyond["__class__"] = type(self).__name__
+        
         return to_dictionary_and_beyond
