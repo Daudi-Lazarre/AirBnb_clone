@@ -31,7 +31,9 @@ class BaseModel(object):
         self.updated_at = datetime.now()
     
     def to_dict(self):
-        """ Returns dictionary of base model """
+        """ Returns dictionary of base model
+        ISO format returns date, time format
+         """
         to_dictionary_and_beyond = {}
         for key, value in self.__dict__.items():
             if key == "created_at" or key == "updated_at":
