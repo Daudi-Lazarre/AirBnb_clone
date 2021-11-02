@@ -26,7 +26,15 @@ class BaseModel(object):
         self.id = str(uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
-
+        if len(kwargs) != 0:
+            """ Keyword args to parse time """
+            for key, value in kwargs.items():
+                if key == "created_at" or key == "updated_at":
+                    self.__dict__[key] = datetime.strptime(value, format)
+                else:
+                    self.__dict__[key] = value
+        else:
+            storage.new(self)
 
     def str(self):
         """ String representation of base model """
