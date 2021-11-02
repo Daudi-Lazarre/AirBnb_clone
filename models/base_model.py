@@ -7,8 +7,6 @@ from datetime import datetime
 
 import models
 
-from models import storage # THIS LINE
-
 class BaseModel(object):
     """ Initializing the base class
     Classes are real-world objects
@@ -34,7 +32,7 @@ class BaseModel(object):
                 else:
                     self.__dict__[key] = value
         else:
-            storage.new(self)
+            models.storage.new(self)
 
     def str(self):
         """ String representation of base model """
