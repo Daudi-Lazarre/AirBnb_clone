@@ -7,7 +7,7 @@ from datetime import datetime
 
 import models
 
-from models import storage
+from models import storage # THIS LINE
 
 class BaseModel(object):
     """ Initializing the base class
