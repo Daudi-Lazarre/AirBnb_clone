@@ -12,13 +12,13 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = "(hbnb)"
 
-    def do_quit(self, arg):
+    def quit(self, arg):
         """
         Exit the terminal
         """
         return True
 
-    def do_EOF(self, arg):
+    def EOF(self, arg):
         """
         End of file (ctrl + d)
         """
