@@ -4,10 +4,11 @@ Console the pain of working alone
 """
 
 import cmd
+import sys
 
 class HBNBCommand(cmd.Cmd):
     """
-    Quit and help implementations
+    Quit, eof and empty line implementations
     """
 
     prompt = "(hbnb)"
@@ -16,7 +17,7 @@ class HBNBCommand(cmd.Cmd):
         """
         Exit the terminal
         """
-        return True
+        sys.exit()
 
     def do_EOF(self, arg):
         """
@@ -25,8 +26,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def empty_line(self):
-        print("", end="")
-        # pass
+        pass
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
