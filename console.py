@@ -12,20 +12,20 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = "(hbnb)"
 
-def do_quit(self, *args):
-    """
-    Exit the terminal
-    """
-    return True
+    def do_quit(self, *args):
+        """
+        Exit the terminal
+        """
+        return True
 
-def do_EOF(self, arg):
-    """
-    End of file (ctrl + d)
-    """
-    return True
+    def do_EOF(self, arg):
+        """
+        End of file (ctrl + d)
+        """
+        return True
 
-def empty_line(self):
-    pass
+    def empty_line(self):
+        pass
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
