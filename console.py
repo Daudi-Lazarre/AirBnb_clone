@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
-
 """
 Console the pain of working alone
 """
-
 import cmd
+
 
 class HBNBCommand(cmd.Cmd):
     """
