@@ -2,8 +2,8 @@
 """
 Console the pain of working alone
 """
-import cmd
 
+import cmd
 
 class HBNBCommand(cmd.Cmd):
     """
@@ -12,7 +12,7 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = "(hbnb)"
 
-    def do_quit(self, *args):
+    def do_quit(self, arg):
         """
         Exit the terminal
         """
