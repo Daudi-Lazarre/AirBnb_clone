@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+
+
 """
 Console the pain of working alone
 """
 
 import cmd
-import sys
 
 class HBNBCommand(cmd.Cmd):
     """
@@ -17,7 +18,7 @@ class HBNBCommand(cmd.Cmd):
         """
         Exit the terminal
         """
-        sys.exit()
+        return True
 
     def do_EOF(self, arg):
         """
