@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """
 Console the pain of working alone
 """
@@ -26,9 +28,6 @@ class HBNBCommand(cmd.Cmd):
 
     def empty_line(self):
         pass
-
-    def custom_prompt(self, prompt):
-        return prompt
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
