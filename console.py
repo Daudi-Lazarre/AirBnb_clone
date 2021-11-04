@@ -24,7 +24,7 @@ class HBNBCommand(cmd.Cmd):
         """
         return True
 
-    def empty_line(self):
+    def emptyline(self):
         pass
 
 
