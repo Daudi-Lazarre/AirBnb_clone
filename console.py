@@ -41,6 +41,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_create(self, arg):
         """ Create new basemodel with new info """
+        # Split separates string into a list
         new_argument = arg.split()
         if len(new_argument) == 0:
             print("** class name missing **")
