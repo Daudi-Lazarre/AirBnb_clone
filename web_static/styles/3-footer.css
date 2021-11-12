@@ -1,1 +1,10 @@
-<!DOCTYPE HTML>
+footer {
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    line-height: 60px;
+    border-top: 1px solid #cccccc;
+}
