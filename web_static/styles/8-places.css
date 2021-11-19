@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-.places h1 {
+ .places h1 {
     text-align: left;
     font-size: 30px;
     width: 100%;
@@ -19,7 +19,6 @@
     border: 1px solid #ff5a5f;
     border-radius: 4px;
     position: relative;
-    /*price is relative to this box-level element*/
 }
 
 .places h2 {
@@ -52,7 +51,6 @@
     flex-direction: row;
     justify-content: center;
 }
-
 .max_guest {
     width: 100px;
     height: 100%;
